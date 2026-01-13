@@ -1,5 +1,5 @@
 ---
-title: Test1
+title: challenge 1 - signet wallet balance
 date: 2026-01-12
 draft: false
 ---

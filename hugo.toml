@@ -6,6 +6,9 @@ theme = 'PaperMod'
 [params]
   description = "https://bosschallenge.xyz"
   author = "jirigrill"
+  # Disable featured/large first post on homepage
+  homeInfoParams = false
+  mainSections = ["posts"]
 
 # Markdown settings
 [markup]
