@@ -13,15 +13,15 @@ This guide will help you deploy your Hugo blog to your DigitalOcean droplet and 
 SSH into your droplet and install Hugo:
 
 ```bash
-# Download latest Hugo extended version
-HUGO_VERSION="0.121.1"
+# Download latest Hugo extended version (v0.146.0+ required for PaperMod theme)
+HUGO_VERSION="0.154.5"
 cd /tmp
 wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
 
 # Install
 sudo dpkg -i hugo_extended_${HUGO_VERSION}_linux-amd64.deb
 
-# Verify installation
+# Verify installation (should be v0.146.0 or greater)
 hugo version
 ```
 
@@ -329,7 +329,7 @@ sudo /usr/local/bin/rebuild-blog.sh
 ### Update Hugo
 
 ```bash
-HUGO_VERSION="0.130.0"  # Check latest version
+HUGO_VERSION="0.154.5"  # Check latest version at https://github.com/gohugoio/hugo/releases
 cd /tmp
 wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
 sudo dpkg -i hugo_extended_${HUGO_VERSION}_linux-amd64.deb
