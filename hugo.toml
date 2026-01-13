@@ -1,10 +1,10 @@
 baseURL = 'https://boss2026.nofiat.me/'
 languageCode = 'en-us'
-title = 'journey through BOSS 2026 (https://bosschallenge.xyz)'
+title = 'journey through BOSS 2026'
 theme = 'PaperMod'
 
 [params]
-  description = "posts about BOSS 2026"
+  description = "https://bosschallenge.xyz"
   author = "jirigrill"
 
 # Markdown settings
