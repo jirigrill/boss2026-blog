@@ -14,6 +14,7 @@ In this post I am gonna collect all resources which I will come over the course 
 - [Bitcoin insider newsletter](https://insider.btcpp.dev)
 - [Bitcoin optech](https://bitcoinops.org/en/newsletters/)
 - [learn me a bitcoin](http://learnmeabitcoin.com)
+- [BIPs](https://github.com/bitcoin/bips/tree/master)
 
 
 # Rust
