@@ -7,8 +7,7 @@ theme = 'PaperMod'
   description = "https://bosschallenge.xyz"
   author = "jirigrill"
   # Disable featured/large first post on homepage
-  homeInfoParams = false
-  mainSections = ["posts"]
+  disableSpecial1stPost = true
 
 # Markdown settings
 [markup]
