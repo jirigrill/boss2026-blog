@@ -1,5 +1,5 @@
 ---
-title: "Intro"
+title: challenge-1-signet-wallet-balance
 date: 2026-01-13
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
-  title: "Intro"
-  date: 2026-01-13
-  draft: false
+title: Intro
+date: 2026-01-12
+draft: false
 ---
   
 
