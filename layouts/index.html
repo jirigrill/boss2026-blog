@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h2>Recent Posts</h2>
+<ul class="post-list">
+    {{ range where .Site.RegularPages "Type" "posts" }}
+    <li>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <div class="post-meta">{{ .Date.Format "January 2, 2006" }}</div>
+        {{ if .Summary }}
+        <p>{{ .Summary }}</p>
+        {{ end }}
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

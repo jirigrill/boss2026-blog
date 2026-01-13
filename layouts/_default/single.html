@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article>
+    <h2>{{ .Title }}</h2>
+    <div class="post-meta">{{ .Date.Format "January 2, 2006" }}</div>
+    <div class="content">
+        {{ .Content }}
+    </div>
+</article>
+<p><a href="{{ .Site.BaseURL }}">← Back to posts</a></p>
+{{ end }}

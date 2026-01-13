@@ -1,0 +1,50 @@
+# Add this to your /etc/caddy/Caddyfile on your DigitalOcean droplet
+
+boss2026.nofiat.me {
+    # Serve static files from Hugo's public directory
+    root * /var/www/boss2026-blog/public
+    file_server
+
+    # Enable compression
+    encode gzip
+
+    # Security headers
+    header {
+        # Prevent clickjacking
+        X-Frame-Options "SAMEORIGIN"
+        # Prevent MIME type sniffing
+        X-Content-Type-Options "nosniff"
+        # Enable XSS protection
+        X-XSS-Protection "1; mode=block"
+        # Referrer policy
+        Referrer-Policy "strict-origin-when-cross-origin"
+    }
+
+    # Custom 404 page (optional - create content/404.md in your blog)
+    handle_errors {
+        @404 {
+            expression {http.error.status_code} == 404
+        }
+        rewrite @404 /404.html
+        file_server
+    }
+
+    # Use Cloudflare DNS for SSL (assuming you have this snippet already)
+    import cloudflare
+}
+
+# Optional: Webhook endpoint for instant rebuilds (see DEPLOYMENT.md Option C)
+# Uncomment if you set up webhooks:
+#
+# boss2026.nofiat.me {
+#     root * /var/www/boss2026-blog/public
+#     file_server
+#     encode gzip
+#
+#     # Webhook endpoint
+#     handle /hooks/* {
+#         reverse_proxy localhost:9000
+#     }
+#
+#     import cloudflare
+# }
