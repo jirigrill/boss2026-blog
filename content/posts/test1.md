@@ -1,5 +1,5 @@
 ---
-title: Test 1
+title: Test1
 date: 2026-01-14
 draft: false
 ---
