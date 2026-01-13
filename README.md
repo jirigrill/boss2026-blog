@@ -85,10 +85,43 @@ Visit `http://localhost:1313` to preview.
 
 ## Customization
 
-### Change Colors
+### Install a Hugo Theme
+
+To use a pre-built Hugo theme (like PaperMod):
+
+1. **Find a theme** at https://themes.gohugo.io/
+
+2. **Install using git submodule**:
+```bash
+git submodule add --depth=1 https://github.com/author/theme-name.git themes/ThemeName
+```
+
+3. **Update hugo.toml**:
+```toml
+theme = 'ThemeName'
+```
+
+4. **Commit and push**:
+```bash
+git add .gitmodules themes/ hugo.toml
+git commit -m "Add ThemeName theme"
+git push
+```
+
+5. **On your droplet**, the submodule will be cloned automatically when you pull changes.
+
+**Example (PaperMod theme)**:
+```bash
+git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+```
+Then add `theme = 'PaperMod'` to hugo.toml
+
+**Note**: When you add a theme, your custom layouts in `layouts/` will override theme layouts if they have the same names. You may want to remove or rename them.
+
+### Change Colors (Custom Theme)
 Edit the `<style>` section in `layouts/_default/baseof.html`:1-50
 
-### Change Layout
+### Change Layout (Custom Theme)
 Edit template files in `layouts/`:
 - `baseof.html`: Base template (header, footer, CSS)
 - `index.html`: Homepage

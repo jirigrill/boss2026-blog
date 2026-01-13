@@ -1,13 +1,11 @@
 baseURL = 'https://boss2026.nofiat.me/'
 languageCode = 'en-us'
-title = 'Boss 2026 Blog'
+title = 'journey through BOSS 2026 (https://bosschallenge.xyz)'
+theme = 'PaperMod'
 
 [params]
-  description = "My blog posts"
-  author = "Boss 2026"
-
-# Disable unnecessary features for minimal setup
-disableKinds = ["taxonomy", "term"]
+  description = "posts about BOSS 2026"
+  author = "jirigrill"
 
 # Markdown settings
 [markup]

@@ -37,6 +37,9 @@ cd /var/www
 git clone https://github.com/yourusername/boss2026-blog.git
 cd boss2026-blog
 
+# Initialize and update submodules (for themes)
+git submodule update --init --recursive
+
 # Build the site
 hugo --minify
 ```
@@ -113,6 +116,9 @@ cd /var/www/boss2026-blog
 
 # Pull latest changes
 git pull origin main
+
+# Update submodules (for themes)
+git submodule update --init --recursive
 
 # Rebuild site
 hugo --minify
