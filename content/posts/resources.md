@@ -7,6 +7,8 @@ In this post I am gonna collect all resources which I will come over the course 
 
 # challenge 1
 - https://learnmeabitcoin.com/technical/keys/base58/
+- https://learnmeabitcoin.com/technical/upgrades/taproot/
+- https://learnmeabitcoin.com/technical/keys/public-key/
 
 # Bitcoin
 - [Mastering Bitcoin 3rd edition](https://github.com/bitcoinbook/bitcoinbook)
