@@ -9,6 +9,7 @@ In this post I am gonna collect all resources which I will come over the course 
 - https://learnmeabitcoin.com/technical/keys/base58/
 - https://learnmeabitcoin.com/technical/upgrades/taproot/
 - https://learnmeabitcoin.com/technical/keys/public-key/
+- https://learnmeabitcoin.com/technical/keys/hd-wallets/extended-keys/
 
 # Bitcoin
 - [Mastering Bitcoin 3rd edition](https://github.com/bitcoinbook/bitcoinbook)
