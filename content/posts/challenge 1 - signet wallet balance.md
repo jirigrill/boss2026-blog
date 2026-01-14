@@ -4,6 +4,9 @@ date: 2026-01-13
 draft: false
 ---
 
+background music
+![](https://youtu.be/PURbSUFzMRA?si=emq8aLE_X6GgXdvC)
+
 **signet wallet goal**: write a simple wallet and use it to interact with a custom signet network provided by the administrator.
 
 **challenge:** Given the private descriptor for a wallet and a blockchain full of transactions, provide your wallet's current balance.
