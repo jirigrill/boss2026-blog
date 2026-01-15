@@ -5,7 +5,7 @@ draft: false
 ---
 
 background music
-{{< youtube-thumb PURbSUFzMRA >}}
+{{< youtube PURbSUFzMRA >}}
 
 **signet wallet goal**: write a simple wallet and use it to interact with a custom signet network provided by the administrator.
 
