@@ -12,6 +12,9 @@ In this post I am gonna collect all resources which I will come over the course 
 - https://learnmeabitcoin.com/technical/keys/hd-wallets/extended-keys/
 - https://learnmeabitcoin.com/technical/keys/hd-wallets/derivation-paths/
 - https://learnmeabitcoin.com/technical/script/p2tr/
+- https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#user-content-Private_parent_key_rarr_private_child_key
+- https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki#script-validation-rules
+- https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki#user-content-Witness_program
 
 # Bitcoin
 - [Mastering Bitcoin 3rd edition](https://github.com/bitcoinbook/bitcoinbook)

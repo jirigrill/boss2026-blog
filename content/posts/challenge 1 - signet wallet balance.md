@@ -1,6 +1,6 @@
 ---
 title: challenge 1 - signet wallet balance
-date: 2026-01-13
+date: 2026-01-15
 draft: false
 ---
 
@@ -39,5 +39,26 @@ btcli -getinfo
   Warnings: (none)
 ```
 
-Now the fun begins...
+This challenge was quite easy as most of the methods were either filled with comments hinting, what should I do or were short and simple where right solution was possible to find with proper reading of rust documentation. I would consider as the most difficult method `derive_priv_child`, where it gave me some time to understand how to decode algorithm described in BIP32. 
 
+Here is my hint, how it can be done:
+```    
+1. prepare the index if hardened
+2. prepare hmac-sha512 input_data
+3. compute hmac-sha512
+4. split hmac result into tweak and child_chaincode
+5. compute child private key
+6. return Bip32Key
+```
+I cant recommend enough to use [https://learnmeabitcoin.com](https://learnmeabitcoin.com) . There are multiple examples and tools, which I could use to validate correctness of my code. Unlimited praise to the guy who built it. 
+
+**used resources:**
+ - https://learnmeabitcoin.com/technical/keys/base58/
+- https://learnmeabitcoin.com/technical/upgrades/taproot/
+- https://learnmeabitcoin.com/technical/keys/public-key/
+- https://learnmeabitcoin.com/technical/keys/hd-wallets/extended-keys/
+- https://learnmeabitcoin.com/technical/keys/hd-wallets/derivation-paths/
+- https://learnmeabitcoin.com/technical/script/p2tr/
+- https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#user-content-Private_parent_key_rarr_private_child_key
+- https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki#script-validation-rules
+- https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki#user-content-Witness_program
