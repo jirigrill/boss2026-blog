@@ -11,6 +11,7 @@ In this post I am gonna collect all resources which I will come over the course 
 - https://learnmeabitcoin.com/technical/keys/public-key/
 - https://learnmeabitcoin.com/technical/keys/hd-wallets/extended-keys/
 - https://learnmeabitcoin.com/technical/keys/hd-wallets/derivation-paths/
+- https://learnmeabitcoin.com/technical/script/p2tr/
 
 # Bitcoin
 - [Mastering Bitcoin 3rd edition](https://github.com/bitcoinbook/bitcoinbook)
