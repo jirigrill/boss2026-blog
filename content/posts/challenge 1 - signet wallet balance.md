@@ -1,7 +1,7 @@
 ---
 title: challenge 1 - signet wallet balance
 date: 2026-01-15
-draft: false
+draft: true
 ---
 
 background music
